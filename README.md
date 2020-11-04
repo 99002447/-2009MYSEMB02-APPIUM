@@ -1,4 +1,4 @@
-##Appium Android Automation of Zomato App</Br>
+## Appium Android Automation of Zomato App</Br>
 </Br>
 Automation Done:</Br>
 1.Login/Registration using Phone Number with OTP.</Br>
