@@ -1,4 +1,4 @@
-## Appium Android Automation of Zomato App</Br>
+## Appium Android Automation of Zomato App By Sourab John Jacob</Br>
 ### Automation Done:</Br>
 1.Login/Registration using Phone Number with OTP.</Br>
 2.Opening App by skipping Login process.</Br>
