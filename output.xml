@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201111 13:35:18.163" rpa="false">
+<suite id="s1" name="AppiumMiniProject" source="D:\RobotWorkspace\AppiumMiniProject">
+<suite id="s1-s1" name="NativeAppSuite" source="D:\RobotWorkspace\AppiumMiniProject\NativeAppSuite">
+<suite id="s1-s1-s1" name="ZomatoSearch" source="D:\RobotWorkspace\AppiumMiniProject\NativeAppSuite\ZomatoSearch.robot">
+<test id="s1-s1-s1-t1" name="TC2_ZomatoMiniProject_Search&amp;PlaceOrder using">
+<kw name="TC2_ZomatoMiniProject_Search&amp;PlaceOrder_Template">
+<arguments>
+<arg>4724</arg>
+<arg>Biryani</arg>
+<arg>Big Chicken</arg>
+<arg>Mutton</arg>
+</arguments>
+<kw name="Open Zomato" library="commonfunctionality">
+<arguments>
+<arg>${port}</arg>
+</arguments>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>remote_url=http://localhost:${port}/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=POCO F1</arg>
+<arg>appPackage=com.application.zomato</arg>
+<arg>appActivity=com.application.zomato.activities.Splash</arg>
+<arg>adbExecTimeout=80000</arg>
+<arg>uiautomator2ServerInstallTimeout=150000</arg>
+<arg>androidInstallTimeout=250000</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:35:18.467" endtime="20201111 13:35:28.947"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>40</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:35:28.948" endtime="20201111 13:35:28.949"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:35:18.466" endtime="20201111 13:35:28.949"></status>
+</kw>
+<kw name="Click Skip" library="commonfunctionality">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Skip</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:35:28.950" endtime="20201111 13:35:32.799"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@text='Skip']</arg>
+</arguments>
+<msg timestamp="20201111 13:35:32.801" level="INFO">Clicking element 'xpath=//*[@text='Skip']'.</msg>
+<status status="PASS" starttime="20201111 13:35:32.799" endtime="20201111 13:35:32.973"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@text='Use current location']</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:35:32.973" endtime="20201111 13:35:34.311"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'Use current')]</arg>
+</arguments>
+<msg timestamp="20201111 13:35:34.313" level="INFO">Clicking element 'xpath=//*[contains(@text,'Use current')]'.</msg>
+<status status="PASS" starttime="20201111 13:35:34.312" endtime="20201111 13:35:34.444"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'While using')]</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:35:34.444" endtime="20201111 13:35:35.292"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'While using')]</arg>
+</arguments>
+<msg timestamp="20201111 13:35:35.293" level="INFO">Clicking element 'xpath=//*[contains(@text,'While using')]'.</msg>
+<status status="PASS" starttime="20201111 13:35:35.292" endtime="20201111 13:35:35.436"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:35:28.949" endtime="20201111 13:35:35.436"></status>
+</kw>
+<kw name="Search" library="commonfunctionality">
+<arguments>
+<arg>${item}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'name, cuisine')]</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:35:35.437" endtime="20201111 13:35:37.561"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'name, cuisine')]</arg>
+</arguments>
+<msg timestamp="20201111 13:35:37.563" level="INFO">Clicking element 'xpath=//*[contains(@text,'name, cuisine')]'.</msg>
+<status status="PASS" starttime="20201111 13:35:37.562" endtime="20201111 13:35:38.421"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'Start typing')]</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:35:38.421" endtime="20201111 13:35:40.010"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'Start typing')]</arg>
+<arg>${item}</arg>
+</arguments>
+<msg timestamp="20201111 13:35:40.012" level="INFO">Typing text 'Biryani' into text field 'xpath=//*[contains(@text,'Start typing')]'</msg>
+<status status="PASS" starttime="20201111 13:35:40.011" endtime="20201111 13:35:41.720"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:35:35.437" endtime="20201111 13:35:41.720"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'- Delivery')]</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:35:41.720" endtime="20201111 13:35:44.216"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'- Delivery')]</arg>
+</arguments>
+<msg timestamp="20201111 13:35:44.218" level="INFO">Clicking element 'xpath=//*[contains(@text,'- Delivery')]'.</msg>
+<status status="PASS" starttime="20201111 13:35:44.216" endtime="20201111 13:35:47.308"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20201111 13:35:50.311" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201111 13:35:47.309" endtime="20201111 13:35:50.311"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@text='Filters']</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:35:50.311" endtime="20201111 13:35:50.514"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@text='Filters']</arg>
+</arguments>
+<msg timestamp="20201111 13:35:50.516" level="INFO">Clicking element 'xpath=//*[@text='Filters']'.</msg>
+<status status="PASS" starttime="20201111 13:35:50.515" endtime="20201111 13:35:50.756"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@text='Rating']</arg>
+</arguments>
+<msg timestamp="20201111 13:35:50.758" level="INFO">Clicking element 'xpath=//*[@text='Rating']'.</msg>
+<status status="PASS" starttime="20201111 13:35:50.756" endtime="20201111 13:35:51.590"></status>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<arguments>
+<arg>727</arg>
+<arg>1839</arg>
+<arg>727</arg>
+<arg>1400</arg>
+<arg>1500</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:35:51.591" endtime="20201111 13:35:53.136"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@text='Sort by']</arg>
+</arguments>
+<msg timestamp="20201111 13:35:53.138" level="INFO">Clicking element 'xpath=//*[@text='Sort by']'.</msg>
+<status status="PASS" starttime="20201111 13:35:53.137" endtime="20201111 13:35:53.865"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@text='Rating: High To Low']</arg>
+</arguments>
+<msg timestamp="20201111 13:35:53.867" level="INFO">Clicking element 'xpath=//*[@text='Rating: High To Low']'.</msg>
+<status status="PASS" starttime="20201111 13:35:53.866" endtime="20201111 13:35:54.857"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@text='Apply']</arg>
+</arguments>
+<msg timestamp="20201111 13:35:54.859" level="INFO">Clicking element 'xpath=//*[@text='Apply']'.</msg>
+<status status="PASS" starttime="20201111 13:35:54.858" endtime="20201111 13:35:55.031"></status>
+</kw>
+<kw name="Hotel searcher" library="commonfunctionality">
+<arguments>
+<arg>${hotel}</arg>
+</arguments>
+<kw name="${i} IN RANGE [ 0 | 999 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Get Webelements</arg>
+<arg>xpath=//*[contains(@text,'${hotel}')]</arg>
+</arguments>
+<assign>
+<var>${list}</var>
+</assign>
+<kw name="Get Webelements" library="AppiumLibrary">
+<doc>Returns list of [http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.remote.webelement|WebElement] objects matching ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'${hotel}')]</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20201111 13:35:58.885" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201111 13:35:56.833" endtime="20201111 13:35:58.886"></status>
+</kw>
+<msg timestamp="20201111 13:35:58.887" level="FAIL">ValueError: Element locator 'xpath=//*[contains(@text,'Big Chicken')]' did not match any elements.</msg>
+<status status="FAIL" starttime="20201111 13:35:55.033" endtime="20201111 13:35:58.887"></status>
+</kw>
+<msg timestamp="20201111 13:35:58.888" level="INFO">${list} = ('FAIL', "ValueError: Element locator 'xpath=//*[contains(@text,'Big Chicken')]' did not match any elements.")</msg>
+<status status="PASS" starttime="20201111 13:35:55.032" endtime="20201111 13:35:58.888"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${list}[0]'=='PASS'</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:35:58.888" endtime="20201111 13:35:58.889"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+<arg>3000</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:35:58.889" endtime="20201111 13:36:01.281"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:35:55.032" endtime="20201111 13:36:01.281"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Get Webelements</arg>
+<arg>xpath=//*[contains(@text,'${hotel}')]</arg>
+</arguments>
+<assign>
+<var>${list}</var>
+</assign>
+<kw name="Get Webelements" library="AppiumLibrary">
+<doc>Returns list of [http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.remote.webelement|WebElement] objects matching ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'${hotel}')]</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20201111 13:36:03.288" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201111 13:36:01.419" endtime="20201111 13:36:03.288"></status>
+</kw>
+<msg timestamp="20201111 13:36:03.289" level="FAIL">ValueError: Element locator 'xpath=//*[contains(@text,'Big Chicken')]' did not match any elements.</msg>
+<status status="FAIL" starttime="20201111 13:36:01.283" endtime="20201111 13:36:03.289"></status>
+</kw>
+<msg timestamp="20201111 13:36:03.289" level="INFO">${list} = ('FAIL', "ValueError: Element locator 'xpath=//*[contains(@text,'Big Chicken')]' did not match any elements.")</msg>
+<status status="PASS" starttime="20201111 13:36:01.282" endtime="20201111 13:36:03.289"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${list}[0]'=='PASS'</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:36:03.290" endtime="20201111 13:36:03.290"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+<arg>3000</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:36:03.291" endtime="20201111 13:36:05.610"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:36:01.282" endtime="20201111 13:36:05.610"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Get Webelements</arg>
+<arg>xpath=//*[contains(@text,'${hotel}')]</arg>
+</arguments>
+<assign>
+<var>${list}</var>
+</assign>
+<kw name="Get Webelements" library="AppiumLibrary">
+<doc>Returns list of [http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.remote.webelement|WebElement] objects matching ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'${hotel}')]</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20201111 13:36:07.809" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201111 13:36:05.747" endtime="20201111 13:36:07.810"></status>
+</kw>
+<msg timestamp="20201111 13:36:07.811" level="FAIL">ValueError: Element locator 'xpath=//*[contains(@text,'Big Chicken')]' did not match any elements.</msg>
+<status status="FAIL" starttime="20201111 13:36:05.611" endtime="20201111 13:36:07.811"></status>
+</kw>
+<msg timestamp="20201111 13:36:07.811" level="INFO">${list} = ('FAIL', "ValueError: Element locator 'xpath=//*[contains(@text,'Big Chicken')]' did not match any elements.")</msg>
+<status status="PASS" starttime="20201111 13:36:05.611" endtime="20201111 13:36:07.811"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${list}[0]'=='PASS'</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:36:07.812" endtime="20201111 13:36:07.813"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+<arg>3000</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:36:07.813" endtime="20201111 13:36:10.114"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:36:05.610" endtime="20201111 13:36:10.115"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Get Webelements</arg>
+<arg>xpath=//*[contains(@text,'${hotel}')]</arg>
+</arguments>
+<assign>
+<var>${list}</var>
+</assign>
+<kw name="Get Webelements" library="AppiumLibrary">
+<doc>Returns list of [http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.remote.webelement|WebElement] objects matching ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'${hotel}')]</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20201111 13:36:12.334" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-4.png"&gt;&lt;img src="appium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201111 13:36:10.250" endtime="20201111 13:36:12.335"></status>
+</kw>
+<msg timestamp="20201111 13:36:12.336" level="FAIL">ValueError: Element locator 'xpath=//*[contains(@text,'Big Chicken')]' did not match any elements.</msg>
+<status status="FAIL" starttime="20201111 13:36:10.116" endtime="20201111 13:36:12.336"></status>
+</kw>
+<msg timestamp="20201111 13:36:12.336" level="INFO">${list} = ('FAIL', "ValueError: Element locator 'xpath=//*[contains(@text,'Big Chicken')]' did not match any elements.")</msg>
+<status status="PASS" starttime="20201111 13:36:10.115" endtime="20201111 13:36:12.336"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${list}[0]'=='PASS'</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:36:12.336" endtime="20201111 13:36:12.337"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+<arg>3000</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:36:12.338" endtime="20201111 13:36:14.629"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:36:10.115" endtime="20201111 13:36:14.629"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Get Webelements</arg>
+<arg>xpath=//*[contains(@text,'${hotel}')]</arg>
+</arguments>
+<assign>
+<var>${list}</var>
+</assign>
+<kw name="Get Webelements" library="AppiumLibrary">
+<doc>Returns list of [http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.remote.webelement|WebElement] objects matching ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'${hotel}')]</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:36:14.630" endtime="20201111 13:36:14.772"></status>
+</kw>
+<msg timestamp="20201111 13:36:14.772" level="INFO">${list} = ('PASS', [&lt;appium.webdriver.webelement.WebElement (session="8e48c843-51e8-4d87-b338-bd41bae24e22", element="66a931f7-8137-4c20-be4b-0d1c963590c4")&gt;])</msg>
+<status status="PASS" starttime="20201111 13:36:14.630" endtime="20201111 13:36:14.772"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${list}[0]'=='PASS'</arg>
+</arguments>
+<msg timestamp="20201111 13:36:14.773" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20201111 13:36:14.772" endtime="20201111 13:36:14.773"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:36:14.629" endtime="20201111 13:36:14.773"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:35:55.032" endtime="20201111 13:36:14.774"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'${hotel}')]</arg>
+</arguments>
+<msg timestamp="20201111 13:36:14.775" level="INFO">Clicking element 'xpath=//*[contains(@text,'Big Chicken')]'.</msg>
+<status status="PASS" starttime="20201111 13:36:14.774" endtime="20201111 13:36:15.001"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:35:55.031" endtime="20201111 13:36:15.001"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20201111 13:36:17.008" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201111 13:36:15.002" endtime="20201111 13:36:17.008"></status>
+</kw>
+<kw name="Dish searcher" library="commonfunctionality">
+<arguments>
+<arg>${food}</arg>
+</arguments>
+<kw name="${i} IN RANGE [ 0 | 999 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Get Webelements</arg>
+<arg>xpath=//*[contains(@text,'${dish}')]</arg>
+</arguments>
+<assign>
+<var>${list}</var>
+</assign>
+<kw name="Get Webelements" library="AppiumLibrary">
+<doc>Returns list of [http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.remote.webelement|WebElement] objects matching ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'${dish}')]</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20201111 13:36:18.442" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-5.png"&gt;&lt;img src="appium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201111 13:36:17.594" endtime="20201111 13:36:18.443"></status>
+</kw>
+<msg timestamp="20201111 13:36:18.443" level="FAIL">ValueError: Element locator 'xpath=//*[contains(@text,'Mutton')]' did not match any elements.</msg>
+<status status="FAIL" starttime="20201111 13:36:17.011" endtime="20201111 13:36:18.444"></status>
+</kw>
+<msg timestamp="20201111 13:36:18.444" level="INFO">${list} = ('FAIL', "ValueError: Element locator 'xpath=//*[contains(@text,'Mutton')]' did not match any elements.")</msg>
+<status status="PASS" starttime="20201111 13:36:17.010" endtime="20201111 13:36:18.444"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${list}[0]'=='PASS'</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:36:18.444" endtime="20201111 13:36:18.445"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+<arg>3000</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:36:18.445" endtime="20201111 13:36:20.843"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:36:17.010" endtime="20201111 13:36:20.843"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Get Webelements</arg>
+<arg>xpath=//*[contains(@text,'${dish}')]</arg>
+</arguments>
+<assign>
+<var>${list}</var>
+</assign>
+<kw name="Get Webelements" library="AppiumLibrary">
+<doc>Returns list of [http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.remote.webelement|WebElement] objects matching ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'${dish}')]</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:36:20.845" endtime="20201111 13:36:21.085"></status>
+</kw>
+<msg timestamp="20201111 13:36:21.085" level="INFO">${list} = ('PASS', [&lt;appium.webdriver.webelement.WebElement (session="8e48c843-51e8-4d87-b338-bd41bae24e22", element="13531f93-067a-46bb-bdbc-deaacac70ec3")&gt;])</msg>
+<status status="PASS" starttime="20201111 13:36:20.844" endtime="20201111 13:36:21.086"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${list}[0]'=='PASS'</arg>
+</arguments>
+<msg timestamp="20201111 13:36:21.086" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20201111 13:36:21.086" endtime="20201111 13:36:21.087"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:36:20.844" endtime="20201111 13:36:21.087"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:36:17.010" endtime="20201111 13:36:21.087"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,'${dish}')]/following::*[@content-desc='Add 1 item to cart']</arg>
+</arguments>
+<msg timestamp="20201111 13:36:21.088" level="INFO">Clicking element 'xpath=//*[contains(@text,'Mutton')]/following::*[@content-desc='Add 1 item to cart']'.</msg>
+<status status="PASS" starttime="20201111 13:36:21.087" endtime="20201111 13:36:21.404"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:36:17.009" endtime="20201111 13:36:21.406"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@text='View Cart']</arg>
+</arguments>
+<status status="PASS" starttime="20201111 13:36:21.406" endtime="20201111 13:36:22.587"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@text='View Cart']</arg>
+</arguments>
+<msg timestamp="20201111 13:36:22.589" level="INFO">Clicking element 'xpath=//*[@text='View Cart']'.</msg>
+<status status="PASS" starttime="20201111 13:36:22.587" endtime="20201111 13:36:22.865"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>8</arg>
+</arguments>
+<msg timestamp="20201111 13:36:30.867" level="INFO">Slept 8 seconds</msg>
+<status status="PASS" starttime="20201111 13:36:22.865" endtime="20201111 13:36:30.867"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Grand Total</arg>
+</arguments>
+<msg timestamp="20201111 13:36:31.016" level="INFO">Current page contains text 'Grand Total'.</msg>
+<status status="PASS" starttime="20201111 13:36:30.868" endtime="20201111 13:36:31.016"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[contains(@content-desc,'tap to remove 1')]</arg>
+</arguments>
+<msg timestamp="20201111 13:36:31.017" level="INFO">Clicking element 'xpath=//*[contains(@content-desc,'tap to remove 1')]'.</msg>
+<status status="PASS" starttime="20201111 13:36:31.016" endtime="20201111 13:36:32.105"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20201111 13:36:37.113" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201111 13:36:32.106" endtime="20201111 13:36:37.113"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:35:18.465" endtime="20201111 13:36:37.114"></status>
+</kw>
+<status status="PASS" starttime="20201111 13:35:18.465" endtime="20201111 13:36:37.114" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201111 13:35:18.245" endtime="20201111 13:36:37.115"></status>
+</suite>
+<status status="PASS" starttime="20201111 13:35:18.240" endtime="20201111 13:36:37.116"></status>
+</suite>
+<status status="PASS" starttime="20201111 13:35:18.210" endtime="20201111 13:36:37.118"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="AppiumMiniProject">AppiumMiniProject</stat>
+<stat pass="1" fail="0" id="s1-s1" name="NativeAppSuite">AppiumMiniProject.NativeAppSuite</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="ZomatoSearch">AppiumMiniProject.NativeAppSuite.ZomatoSearch</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
