@@ -3,7 +3,7 @@
 Library    AppiumLibrary
 Library    Process 
 Resource    Resources/commonfunctionality.resource  
-Suite Setup    Start Process    appium    -p    4724    --relaxed-security     shell=True    alias=appiumserver    stdout=E:\\appium.txt    stderr=E:\\appium1.txt     
+Suite Setup    Start Process    appium    -p    4724    --relaxed-security     shell=True    alias=appiumserver    stdout=D:\\appium.txt    stderr=D:\\appium1.txt     
 Suite Teardown    Terminate Process    appiumserver    kill=true    
 
 Test Template    TC1_ZomatoMiniProject_Login/Registration_Template

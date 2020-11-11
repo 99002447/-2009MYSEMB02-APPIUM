@@ -1,8 +1,8 @@
 *** Settings ***
 
 Resource    Resources/commonfunctionality.resource  
-Suite Setup    Start Process    appium    -p    4724    --relaxed-security     shell=True    alias=appiumserver    stdout=E:\\appium.txt    stderr=E:\\appium1.txt     
-Suite Teardown    Terminate Process    appiumserver    kill=true   
+#Suite Setup    Start Process    appium    -p    4724    --relaxed-security     shell=True    alias=appiumserver    stdout=D:\\appium.txt    stderr=D:\\appium1.txt     
+#Suite Teardown    Terminate Process    appiumserver    kill=true   
  
 Test Template    TC2_ZomatoMiniProject_Search&PlaceOrder_Template        
 
@@ -22,7 +22,8 @@ TC2_ZomatoMiniProject_Search&PlaceOrder_Template
     Search    ${item}
     Wait Until Element Is Visible    xpath=//*[contains(@text,'- Delivery')]
     Click Element    xpath=//*[contains(@text,'- Delivery')]
-    Sleep    3  
+    Sleep    3 
+    Wait Until Element Is Visible    xpath=//*[@text='Filters'] 
     Click Element    xpath=//*[@text='Filters']      
     Click Element    xpath=//*[@text='Rating'] 
     Swipe    727    1839    727    1400    1500
@@ -32,7 +33,7 @@ TC2_ZomatoMiniProject_Search&PlaceOrder_Template
     Hotel searcher    ${hotel}
     Sleep    2    
     Dish searcher    ${food}    
-    Sleep    2   
+    Wait Until Element Is Visible    xpath=//*[@text='View Cart']  
     Click Element    xpath=//*[@text='View Cart']
     Sleep    8    
     Page Should Contain Text    Grand Total    
